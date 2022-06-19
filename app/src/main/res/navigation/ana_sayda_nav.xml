@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ana_sayda_nav"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.kiyafetkiralama.Fragment.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_ayarlarFragment"
+            app:destination="@id/ayarlarFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_urunEkle"
+            app:destination="@id/urunEkle" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_aramaFragment"
+            app:destination="@id/aramaFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_aramaFragment2"
+            app:destination="@id/aramaFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_urunAyrintiFragment"
+            app:destination="@id/urunAyrintiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayarlarFragment"
+        android:name="com.kiyafetkiralama.Fragment.AyarlarFragment"
+        android:label="fragment_ayarlar"
+        tools:layout="@layout/fragment_ayarlar" >
+        <action
+            android:id="@+id/action_ayarlarFragment_to_kullaniciAyrintiFragment"
+            app:destination="@id/kullaniciAyrintiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/urunEkle"
+        android:name="com.kiyafetkiralama.Fragment.UrunEkle"
+        android:label="fragment_urun_ekle"
+        tools:layout="@layout/fragment_urun_ekle" />
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.kiyafetkiralama.Fragment.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/aramaFragment"
+        android:name="com.kiyafetkiralama.Fragment.AramaFragment"
+        android:label="fragment_arama"
+        tools:layout="@layout/fragment_arama" />
+    <fragment
+        android:id="@+id/urunAyrintiFragment"
+        android:name="com.kiyafetkiralama.Fragment.UrunAyrintiFragment"
+        android:label="fragment_urun_ayrinti"
+        tools:layout="@layout/fragment_urun_ayrinti" />
+    <fragment
+        android:id="@+id/kullaniciAyrintiFragment"
+        android:name="com.kiyafetkiralama.Fragment.KullaniciAyrintiFragment"
+        android:label="fragment_kullanici_ayrinti"
+        tools:layout="@layout/fragment_kullanici_ayrinti" />
+</navigation>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.KullaniciAyrintiFragment">
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/uyeol" />
+
+    <Button
+        android:id="@+id/KaydetButton"
+        android:layout_width="237dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#FFF9F9"
+        android:backgroundTintMode="add"
+        android:hapticFeedbackEnabled="false"
+        android:insetBottom="6dp"
+        android:text="Kaydet"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        app:iconPadding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KullaniciTelefon" />
+
+    <Button
+        android:id="@+id/fotografYukle"
+        android:layout_width="198dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#FFF9F9"
+        android:backgroundTintMode="add"
+        android:hapticFeedbackEnabled="false"
+        android:text="Fotoğraf yükle"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProfil" />
+
+    <Button
+        android:id="@+id/fotografEkle"
+        android:layout_width="198dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFF9F9"
+        android:backgroundTintMode="add"
+        android:hapticFeedbackEnabled="false"
+        android:text="Fotoğraf Ekle"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProfil" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="207dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="372dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="207dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="428dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <EditText
+        android:id="@+id/KullaniciTelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="396dp"
+        android:ems="10"
+        android:hint="Telefon no::"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#636060"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="207dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="320dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <EditText
+        android:id="@+id/KullaniciAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="Kullanici Adınız:"
+        android:inputType="textPersonName"
+        android:textAllCaps="false"
+        android:textColorHint="#636060"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProfil" />
+
+    <EditText
+        android:id="@+id/KullaniciCinsiyet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="452dp"
+        android:ems="10"
+        android:hint="Cinsiyet:"
+        android:textColorHint="#595757"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Profil Düzenle"
+        android:textColor="#000000"
+        android:textSize="39sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageProfil"
+        android:layout_width="135dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:src="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
