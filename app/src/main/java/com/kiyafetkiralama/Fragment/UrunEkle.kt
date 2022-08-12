@@ -73,6 +73,42 @@ class UrunEkle : Fragment() {
                 return@setOnClickListener
 
             }
+            if(urunbaslik.length<=5) {
+                Toast.makeText(this.context, "Ürün başlığı için en az 5 karakter girilmeli.. ", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
+            if(urunbaslik.length>=100) {
+                Toast.makeText(this.context, "Ürün başlığı en azla 100 karakter içermelidir ", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
+            if(urunbaslik.length == 0) {
+                Toast.makeText(this.context, "Lütfen Ürün başlığını boş bırakmayınız ", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
+            if(urunaciklama.length>=250) {
+                Toast.makeText(this.context, "Ürün açıklaması en fazla 250 karakter olmalıdır ", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
+            if(urunaciklama.length<=50) {
+                Toast.makeText(this.context, "Lütfen ürün açıklamasını detaylı ve anlaşılır bir şekilde en az 25 karakter kullanarak yazınız", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
+            if(urunaciklama.length ==0) {
+                Toast.makeText(this.context, "lütfen ürün açıklamasını boş bırakmayınız ", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
+            if(urunFiyat.length == 0) {
+                Toast.makeText(this.context, "lütfen ürün fiyatını(günlük) boş bırakmayınız ", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
+
             val urun = Urun(urunbaslik!!.toString(),urunFiyat.toString(), urunaciklama.toString(),userUid, urunResimler)
             try {
                 refUrun.push().setValue(urun)

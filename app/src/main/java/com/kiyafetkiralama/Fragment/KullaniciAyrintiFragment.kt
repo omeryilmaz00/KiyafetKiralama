@@ -86,6 +86,22 @@ class KullaniciAyrintiFragment() : Fragment() {
 
         KaydetButton.setOnClickListener {
 
+
+            if(kullaniciAd!!.text.toString() == "") {
+                Toast.makeText(this.context, "Lütfen kullanıcı adını boş bırakmayınız", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
+            if(KullaniciTelefon!!.text.toString() == "") {
+                Toast.makeText(this.context, "Lütfen numaranızı yazınız", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
+            if(Profilresim.count() == 0) {
+                Toast.makeText(this.context, "lütfen profil fotoğrafı ekleyiniz", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
+            }
             val kullanici = Kullanici(currentUser!!.uid,kullaniciAd!!.text.toString(),KullaniciTelefon!!.text.toString(),KullaniciCinsiyet!!.text.toString(),
                 Profilresim,sepet
             );

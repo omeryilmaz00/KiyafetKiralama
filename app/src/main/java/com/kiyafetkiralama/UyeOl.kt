@@ -47,7 +47,12 @@ class UyeOl : AppCompatActivity() {
 
             if (KullaniciMail.text.toString() == "" || KullaniciSifre.text.toString() ==  "" )
             {
-                Toast.makeText(this, "lütfen boş bırakmayınız ", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "lütfen email ve şifreyi boş bırakmayınız ", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener;
+            }
+            if (KullaniciSifreTekrar.text.toString() == "")
+            {
+                Toast.makeText(this, "lütfen şifre tekrar bölümünü boş bırakmayınız", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener;
             }
 

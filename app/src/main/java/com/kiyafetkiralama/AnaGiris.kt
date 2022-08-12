@@ -24,17 +24,13 @@ class AnaGiris : AppCompatActivity() {
         ArkaPlan.setImageResource(R.drawable.anagiris)
         var Button_giris = findViewById<Button>(R.id.buttonGirisYap)
         var Button_UyeOl = findViewById<Button>(R.id.buttonUyeol)
-        var TextButton = findViewById<TextView>(R.id.UyeOlmadanDevamEt)
+
         var Urunbaslik = findViewById<TextView>(R.id.UrunBasligi)
         var Urunaciklama = findViewById<TextView>(R.id.UrunAciklama)
 
 
 
-        TextButton.setOnClickListener {
 
-            val yeniIntent = Intent(this@AnaGiris, MainActivity::class.java)
-            startActivity(yeniIntent)
-        }
         Button_UyeOl.setOnClickListener {
 
             val yeniIntent = Intent(this@AnaGiris,UyeOl::class.java)
